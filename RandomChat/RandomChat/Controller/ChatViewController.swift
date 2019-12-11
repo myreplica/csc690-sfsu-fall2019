@@ -49,7 +49,7 @@ class ChatViewController: JSQMessagesViewController {
         }
 
         title = "Display Name: \(senderDisplayName!)"
-
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showDisplayNameDialog))
         tapGesture.numberOfTapsRequired = 1
 
