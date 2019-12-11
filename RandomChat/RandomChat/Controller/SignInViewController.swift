@@ -10,9 +10,16 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var signIn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        signIn.backgroundColor = .clear
+        signIn.layer.cornerRadius = 15
+        signIn.layer.borderWidth = 2
+        signIn.layer.borderColor = UIColor.white.cgColor
+        
+        
         // Do any additional setup after loading the view.
     }
 

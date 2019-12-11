@@ -99,7 +99,7 @@ class ChatViewController: JSQMessagesViewController {
             }
             else
             {
-                let names = ["anonymous"]
+                let names = ["anonymous", "bob", "monkey"]
                 textField.text = names[Int(arc4random_uniform(UInt32(names.count)))]
             }
         }

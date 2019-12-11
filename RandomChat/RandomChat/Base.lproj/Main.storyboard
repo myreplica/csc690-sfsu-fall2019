@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miL-yP-GMR">
-                                <rect key="frame" x="139" y="546" width="136" height="44"/>
+                                <rect key="frame" x="127" y="528" width="160" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Get Started!">
@@ -50,6 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ofv-YV-dRj"/>
                     <connections>
+                        <outlet property="signIn" destination="miL-yP-GMR" id="5Xd-dQ-UNa"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="gotoChat" id="u4a-pa-NJK"/>
                     </connections>
                 </viewController>
