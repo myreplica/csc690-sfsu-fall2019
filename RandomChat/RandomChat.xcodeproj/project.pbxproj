@@ -16,7 +16,7 @@
 		24674ECF2399E9BE00B5CDA2 /* RandomChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24674ECE2399E9BE00B5CDA2 /* RandomChatTests.swift */; };
 		24674EDA2399E9BE00B5CDA2 /* RandomChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24674ED92399E9BE00B5CDA2 /* RandomChatUITests.swift */; };
 		2494F0222399F7FC00B8A426 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2494F0212399F7FC00B8A426 /* GoogleService-Info.plist */; };
-		2494F0242399FA3700B8A426 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494F0232399FA3700B8A426 /* Constants.swift */; };
+		2494F0242399FA3700B8A426 /* channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494F0232399FA3700B8A426 /* channel.swift */; };
 		24AA6DE3239F4C3800CC0F54 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA6DE2239F4C3800CC0F54 /* SignInViewController.swift */; };
 		3A202BA876580A10A89D170A /* Pods_RandomChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F5C8B344E113179248F998 /* Pods_RandomChatTests.framework */; };
 		49F7F388CEB3ADEA1E27C508 /* Pods_RandomChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8829C6425D595AB9CF1E9064 /* Pods_RandomChat.framework */; };
@@ -60,7 +60,7 @@
 		24674EDB2399E9BE00B5CDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2494F0202399F4A500B8A426 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		2494F0212399F7FC00B8A426 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2494F0232399FA3700B8A426 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2494F0232399FA3700B8A426 /* channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = channel.swift; sourceTree = "<group>"; };
 		24AA6DE2239F4C3800CC0F54 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		40DA4209927E4426D434DE07 /* Pods-RandomChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomChat.release.xcconfig"; path = "Target Support Files/Pods-RandomChat/Pods-RandomChat.release.xcconfig"; sourceTree = "<group>"; };
 		4363AA3C1156B154F1978274 /* Pods-RandomChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomChatTests.release.xcconfig"; path = "Target Support Files/Pods-RandomChatTests/Pods-RandomChatTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			children = (
 				24AA6DE1239F4BFC00CC0F54 /* Controller */,
 				24674EB72399E9BB00B5CDA2 /* AppDelegate.swift */,
-				2494F0232399FA3700B8A426 /* Constants.swift */,
+				2494F0232399FA3700B8A426 /* channel.swift */,
 				24674EB92399E9BB00B5CDA2 /* SceneDelegate.swift */,
 				24674EBD2399E9BB00B5CDA2 /* Main.storyboard */,
 				24674EC02399E9BD00B5CDA2 /* Assets.xcassets */,
@@ -431,7 +431,7 @@
 				24674EB82399E9BB00B5CDA2 /* AppDelegate.swift in Sources */,
 				24674EBA2399E9BB00B5CDA2 /* SceneDelegate.swift in Sources */,
 				24AA6DE3239F4C3800CC0F54 /* SignInViewController.swift in Sources */,
-				2494F0242399FA3700B8A426 /* Constants.swift in Sources */,
+				2494F0242399FA3700B8A426 /* channel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

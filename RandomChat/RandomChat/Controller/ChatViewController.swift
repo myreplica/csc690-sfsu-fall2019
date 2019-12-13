@@ -68,7 +68,7 @@ class ChatViewController: JSQMessagesViewController {
         
         
         // observing Firebase data
-        let query = Constants.refs.databaseChats.queryLimited(toLast: 10)
+        let query = channel.refs.databaseChats.queryLimited(toLast: 10)
 
         _ = query.observe(.childAdded, with: { [weak self] snapshot in
 
@@ -164,7 +164,7 @@ class ChatViewController: JSQMessagesViewController {
     //sending a chat message
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!)
     {
-        let ref = Constants.refs.databaseChats.childByAutoId()
+        let ref = channel.refs.databaseChats.childByAutoId()
 
         let message = ["sender_id": senderId, "name": senderDisplayName, "text": text]
 

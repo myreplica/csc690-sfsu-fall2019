@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 
-struct Constants
+struct channel
 {
     struct refs
     {
