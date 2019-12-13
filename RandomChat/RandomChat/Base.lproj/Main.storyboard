@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NVS-uf-ZHC">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="4864" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,19 +23,14 @@
             <objects>
                 <viewController id="bZS-jD-fPt" customClass="SignInViewController" customModule="RandomChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="an1-LS-3Eb" customClass="SignIn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RandomChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GW-ek-KeL">
-                                <rect key="frame" x="57" y="291" width="300" height="120"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="37"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miL-yP-GMR">
-                                <rect key="frame" x="127" y="528" width="160" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miL-yP-GMR">
+                                <rect key="frame" x="92" y="676" width="191" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Mv-5I-Q1P"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Get Started!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,8 +39,24 @@
                                     <action selector="signIn:" destination="bZS-jD-fPt" eventType="touchUpInside" id="UWY-xl-cPd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RandomChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GW-ek-KeL">
+                                <rect key="frame" x="33" y="275" width="309" height="168"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="37"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.29411764705882354" green="0.75686274509803919" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="miL-yP-GMR" firstAttribute="leading" secondItem="rkz-cK-bme" secondAttribute="leading" constant="92" id="9sR-uA-j7u"/>
+                            <constraint firstItem="1GW-ek-KeL" firstAttribute="top" secondItem="rkz-cK-bme" secondAttribute="top" constant="187" id="K0K-n9-lXy"/>
+                            <constraint firstItem="miL-yP-GMR" firstAttribute="top" secondItem="1GW-ek-KeL" secondAttribute="bottom" constant="233" id="Kbu-2g-uHW"/>
+                            <constraint firstItem="rkz-cK-bme" firstAttribute="trailing" secondItem="1GW-ek-KeL" secondAttribute="trailing" constant="33" id="Mw8-Sd-Xic"/>
+                            <constraint firstItem="rkz-cK-bme" firstAttribute="bottom" secondItem="miL-yP-GMR" secondAttribute="bottom" constant="52" id="cH8-mz-PgJ"/>
+                            <constraint firstItem="1GW-ek-KeL" firstAttribute="leading" secondItem="rkz-cK-bme" secondAttribute="leading" constant="33" id="d6H-nI-WEc"/>
+                            <constraint firstItem="miL-yP-GMR" firstAttribute="leading" secondItem="rkz-cK-bme" secondAttribute="leading" constant="92" id="kpX-Kg-jmA"/>
+                            <constraint firstItem="rkz-cK-bme" firstAttribute="trailing" secondItem="miL-yP-GMR" secondAttribute="trailing" constant="92" id="yeP-ho-Wne"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rkz-cK-bme"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ofv-YV-dRj"/>
@@ -56,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhc-Ev-bwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.8840579710145" y="112.5"/>
+            <point key="canvasLocation" x="1026.4000000000001" y="110.19490254872565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I1G-LS-8il">
@@ -64,7 +75,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NVS-uf-ZHC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="laT-Yh-lDP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -11,6 +11,7 @@
 
 import UIKit
 import JSQMessagesViewController
+import Photos
 
 class ChatViewController: JSQMessagesViewController {
     var messages = [JSQMessage]()
@@ -48,7 +49,7 @@ class ChatViewController: JSQMessagesViewController {
             showDisplayNameDialog()
         }
 
-        title = "Display Name: \(senderDisplayName!)"
+        title = "RandomChat: [\(senderDisplayName!)]"
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showDisplayNameDialog))
         tapGesture.numberOfTapsRequired = 1
@@ -56,10 +57,14 @@ class ChatViewController: JSQMessagesViewController {
         navigationController?.navigationBar.addGestureRecognizer(tapGesture)
         
         
-        //avatar
-        inputToolbar.contentView.leftBarButtonItem = nil
-        collectionView.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
-        collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
+       
+        //inputToolbar.contentView.leftBarButtonItem = nil
+        
+          //avatar
+        collectionView.collectionViewLayout.incomingAvatarViewSize = CGSize.init(width: 30, height: 30)
+        collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSize.init(width: 30, height: 30)
+        
+        
         
         
         // observing Firebase data
@@ -110,7 +115,7 @@ class ChatViewController: JSQMessagesViewController {
 
                 self?.senderDisplayName = textField.text
 
-                self?.title = "Display Name: \(self!.senderDisplayName!)"
+                self?.title = "RandomChat: [\(self!.senderDisplayName!)]"
 
                 defaults.set(textField.text, forKey: "jsq_name")
                 defaults.synchronize()
@@ -121,7 +126,7 @@ class ChatViewController: JSQMessagesViewController {
     }
     
     
-    
+    //message collection
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData!
     {
         return messages[indexPath.item]
@@ -137,9 +142,12 @@ class ChatViewController: JSQMessagesViewController {
         return messages[indexPath.item].senderId == senderId ? outgoingBubble : incomingBubble
     }
     
+    //avatar collection view
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAt indexPath: IndexPath!) -> JSQMessageAvatarImageDataSource!
     {
-        return nil
+        let AvatarImg = JSQMessagesAvatarImage.init(avatarImage: #imageLiteral(resourceName: "Image"), highlightedImage: #imageLiteral(resourceName: "Image"), placeholderImage: #imageLiteral(resourceName: "Image"))
+        
+        return AvatarImg
     }
     
     //Set the name label for message bubbles
@@ -165,7 +173,10 @@ class ChatViewController: JSQMessagesViewController {
         finishSendingMessage()
     }
     
-    
+    override func didPressAccessoryButton(_ sender: UIButton!) {
+        print("Send Image")
+    }
+
     
     
     
