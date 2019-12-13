@@ -10,7 +10,7 @@ For CSC690 final project, we are creating an IOS app called RandomChat app which
 - User must be able to send messages to chat room
 - User must be able to view the sent messages in chat room
 - User must be able to send emoji to chat room
-- User must be able to view the alias in chat room
+- User must be able to view the display name in chat room
 
 # Nice to have features:
 - User can upload images/videos to chat room
