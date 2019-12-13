@@ -1,5 +1,5 @@
 # Final Project for csc690 
-# Team Members: Ziping Huang, Han Huang (916241526)
+# Team Members: Ziping Huang (916155583), Han Huang (916241526)
 ------------------------------------------------------------------------------------------------------------------------------
 # Proposal for RandomChat app
 
@@ -10,7 +10,7 @@ For CSC690 final project, we are creating an IOS app called RandomChat app which
 - User must be able to send messages to chat room
 - User must be able to view the sent messages in chat room
 - User must be able to send emoji to chat room
-- User must be able to view the alias in chat room
+- User must be able to view the display name in chat room
 
 # Nice to have features:
 - User can upload images/videos to chat room
@@ -18,3 +18,14 @@ For CSC690 final project, we are creating an IOS app called RandomChat app which
 - Notification when the message is sent
 - User able to send voice messages and video chat
 - User can like or dislike a chat message
+
+
+# Run/Build
+- To run this project/application download/open xcode
+- Update xcode to version 11.2 or lastest
+- Make sure IOS version is 13.1 or higher
+- Lastly build and run this project on xcode
+
+# Libraries used
+- JSQMessagesViewController
+- Firebase
